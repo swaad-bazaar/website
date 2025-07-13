@@ -49,6 +49,12 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     color: #ff6b35;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #e55a2b;
 }
 
 .logo i {
@@ -750,11 +756,6 @@ body {
     .about-text h2 {
         font-size: 1.8rem;
     }
-}
-
-/* Smooth scrolling for all browsers */
-html {
-    scroll-behavior: smooth;
 }
 
 /* Custom scrollbar */

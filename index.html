@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swaad Bazaar - Authentic Chat & Snacks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>Swaad Bazaar</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#menu" class="nav-link">Menu</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Swaad Bazaar</h1>
+            <p>Authentic Indian Chat & Snacks - Taste the Street Food Magic</p>
+            <a href="#menu" class="cta-button">Explore Menu</a>
+        </div>
+        <div class="hero-image">
+            <div class="food-animation">
+                <i class="fas fa-pepper-hot"></i>
+                <i class="fas fa-cookie-bite"></i>
+                <i class="fas fa-bread-slice"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Our Delicious Menu</h2>
+            
+            <!-- Category Tabs -->
+            <div class="category-tabs">
+                <button class="tab-button active" data-category="chats">Chats</button>
+                <button class="tab-button" data-category="snacks">Snacks</button>
+                <button class="tab-button" data-category="pav-special">Pav Special</button>
+                <button class="tab-button" data-category="paratha">Paratha</button>
+                <button class="tab-button" data-category="sweets">Sweets</button>
+            </div>
+
+            <!-- Chats Category -->
+            <div id="chats" class="menu-category active">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-bowl-food"></i>
+                        </div>
+                        <h3>Bhel Puri</h3>
+                        <p>Crispy puffed rice mixed with tangy chutneys, sev, and fresh vegetables</p>
+                        <span class="price">₹60</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <h3>Pani Puri</h3>
+                        <p>Crispy puris filled with spiced water, tamarind chutney, and potatoes</p>
+                        <span class="price">₹50</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Sev Puri</h3>
+                        <p>Crispy puris topped with potatoes, onions, chutneys, and sev</p>
+                        <span class="price">₹55</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Aloo Tikki Chat</h3>
+                        <p>Crispy potato patties served with yogurt, chutneys, and garnishes</p>
+                        <span class="price">₹70</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <h3>Papdi Chat</h3>
+                        <p>Crispy wafers topped with yogurt, chutneys, and fresh ingredients</p>
+                        <span class="price">₹65</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-cookie"></i>
+                        </div>
+                        <h3>Dahi Puri</h3>
+                        <p>Mini puris filled with yogurt, sweet chutney, and spices</p>
+                        <span class="price">₹60</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Snacks Category -->
+            <div id="snacks" class="menu-category">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-cookie-bite"></i>
+                        </div>
+                        <h3>Samosa</h3>
+                        <p>Crispy triangular pastry filled with spiced potatoes and peas</p>
+                        <span class="price">₹25</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Kachori</h3>
+                        <p>Spicy deep-fried pastry filled with lentils and aromatic spices</p>
+                        <span class="price">₹30</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-circle-notch"></i>
+                        </div>
+                        <h3>Pakora</h3>
+                        <p>Crispy fritters made with vegetables and gram flour batter</p>
+                        <span class="price">₹40</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-spa"></i>
+                        </div>
+                        <h3>Dhokla</h3>
+                        <p>Soft and spongy steamed cake made from gram flour</p>
+                        <span class="price">₹45</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-cheese"></i>
+                        </div>
+                        <h3>Cheese Corn Roll</h3>
+                        <p>Crispy rolls filled with cheese, corn, and aromatic spices</p>
+                        <span class="price">₹80</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Paneer Pakora</h3>
+                        <p>Deep-fried cottage cheese fritters with mint chutney</p>
+                        <span class="price">₹85</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pav Special Category -->
+            <div id="pav-special" class="menu-category">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-bread-slice"></i>
+                        </div>
+                        <h3>Pav Bhaji</h3>
+                        <p>Spicy mixed vegetable curry served with buttered bread rolls</p>
+                        <span class="price">₹90</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-hamburger"></i>
+                        </div>
+                        <h3>Vada Pav</h3>
+                        <p>Mumbai's famous potato dumpling burger with spicy chutneys</p>
+                        <span class="price">₹35</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-fire-flame-curved"></i>
+                        </div>
+                        <h3>Dabeli</h3>
+                        <p>Spicy potato mixture in pav with sweet and tangy chutneys</p>
+                        <span class="price">₹40</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <h3>Misal Pav</h3>
+                        <p>Spicy sprouts curry topped with farsan, served with pav</p>
+                        <span class="price">₹75</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-cheese"></i>
+                        </div>
+                        <h3>Cheese Pav Bhaji</h3>
+                        <p>Classic pav bhaji loaded with melted cheese</p>
+                        <span class="price">₹120</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3>Khada Pav</h3>
+                        <p>Spicy whole wheat pav with special masala and butter</p>
+                        <span class="price">₹45</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paratha Category -->
+            <div id="paratha" class="menu-category">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <h3>Aloo Paratha</h3>
+                        <p>Stuffed flatbread with spiced potato filling, served with yogurt</p>
+                        <span class="price">₹65</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Gobi Paratha</h3>
+                        <p>Flatbread stuffed with spiced cauliflower and fresh herbs</p>
+                        <span class="price">₹70</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-cheese"></i>
+                        </div>
+                        <h3>Paneer Paratha</h3>
+                        <p>Cottage cheese stuffed paratha with aromatic spices</p>
+                        <span class="price">₹85</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-carrot"></i>
+                        </div>
+                        <h3>Mix Veg Paratha</h3>
+                        <p>Multi-vegetable stuffed paratha with seasonal vegetables</p>
+                        <span class="price">₹75</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-pepper-hot"></i>
+                        </div>
+                        <h3>Methi Paratha</h3>
+                        <p>Fenugreek leaves paratha with butter and pickles</p>
+                        <span class="price">₹60</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3>Laccha Paratha</h3>
+                        <p>Multi-layered crispy paratha with ghee and herbs</p>
+                        <span class="price">₹55</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sweets Category -->
+            <div id="sweets" class="menu-category">
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-cookie"></i>
+                        </div>
+                        <h3>Gulab Jamun</h3>
+                        <p>Soft milk dumplings soaked in sugar syrup with cardamom</p>
+                        <span class="price">₹50</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                        <h3>Rasgulla</h3>
+                        <p>Spongy cottage cheese balls in light sugar syrup</p>
+                        <span class="price">₹45</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Jalebi</h3>
+                        <p>Crispy spiral-shaped sweet soaked in saffron sugar syrup</p>
+                        <span class="price">₹60</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Kulfi</h3>
+                        <p>Traditional Indian ice cream with pistachios and cardamom</p>
+                        <span class="price">₹40</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3>Kaju Katli</h3>
+                        <p>Diamond-shaped cashew fudge with silver leaf</p>
+                        <span class="price">₹80</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="item-image">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3>Motichoor Laddu</h3>
+                        <p>Sweet balls made from tiny gram flour pearls</p>
+                        <span class="price">₹55</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Swaad Bazaar</h2>
+                    <p>Welcome to Swaad Bazaar, where authentic Indian street food meets modern dining experience. We bring you the authentic taste of Indian chats, snacks, and sweets that will transport you to the bustling streets of India.</p>
+                    <p>Our chefs use traditional recipes and fresh ingredients to create the perfect balance of flavors - spicy, sweet, tangy, and savory - all in one bite.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Fresh Ingredients</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Made with Love</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>Authentic Taste</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-store"></i>
+                        <p>Our Kitchen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Palm Meadows, Whitefield<br>Bengaluru, Karnataka 560066</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 74938 86529</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Mon-Sun: 10:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@swaadbazaar.in</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-utensils"></i>
+                        <span>Swaad Bazaar</span>
+                    </div>
+                    <p>Authentic Indian Chat & Snacks</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="#chats">Chats</a></li>
+                        <li><a href="#snacks">Snacks</a></li>
+                        <li><a href="#pav-special">Pav Special</a></li>
+                        <li><a href="#paratha">Paratha</a></li>
+                        <li><a href="#sweets">Sweets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Palm Meadows, Whitefield, Bengaluru, Karnataka 560066</p>
+                    <p><i class="fas fa-phone"></i> +91 74938 86529</p>
+                    <p><i class="fas fa-envelope"></i> info@swaadbazaar.in</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Swaad Bazaar. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
